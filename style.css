@@ -24,27 +24,32 @@
 
 }
 
+.container .img {
+  margin-top: 30px;
+}
+
 
 .content {
   position: relative;
   top: 0;
-  color:black;
+  color: black;
   margin-top: 32px;
-
+  margin-bottom: 24px;
   width: 1440px;
   height: 64px;
   flex-shrink: 0;
 }
 
-.SÖTBELLA{
+.SÖTBELLA {
   color: #000;
-text-align: center;
-font-family: "DM Serif Display";
-font-size: 64px;
-font-style: normal;
-font-weight: 400;
-line-height: 64px; /* 100% */
-align-items: center;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  /* 100% */
+  align-items: center;
 }
 
 .content .list-inline-item:not(:last-child) {
@@ -59,55 +64,65 @@ align-items: center;
 
 
 .coupon {
+  height: 100%;
+  font-family: Lato;
+  background-color: white;
+  width: 411px;
+  padding: 16px;
+  flex-direction: column;
+  gap: 8px;
   display: flex;
- width: 100%;
- height: 128px;
- flex-direction: row;
- align-items: flex-start;
-   font-family: Lato;
-   background-color: white;
- 
- }
- 
- .container1 {
-   padding: 2px 16px;
-   background-color: #f1f1f1;
-   border: 0.5px solid #9D9D9D;
-   flex-direction: column; /* Ensure text stacks vertically */
-   width: 100%;
-   display: flex;
- }
- 
- .container1 .firstline{
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.container1 {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+  border: 0.5px solid #9D9D9D;
+  flex-direction: column;
+  /* Ensure text stacks vertically */
+  width: 100%;
+  display: flex;
+}
+
+.container1 .firstline {
   color: #000;
-font-family: Lato;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 166.667% */
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+  margin-top:16px ;
+  margin-bottom: 8px;
 
- }
+}
 
- .container1 .secondline{
+.container1 .secondline {
   color: #3D3D3D;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  margin-bottom: 8px;
+  /* 166.667% */
+}
 
- }
-
- .container1 .thirdline{
+.container1 .thirdline {
   color: #000;
-font-family: Lato;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 166.667% */
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 16px;
+  /* 166.667% */
 
- }
- .container1 .thirdline span .thirdlinedate{
+}
+
+.container1 .thirdline span .thirdlinedate {
   color: #3D3D3D;
   font-family: Lato;
   font-size: 12px;
@@ -115,15 +130,16 @@ line-height: 20px; /* 166.667% */
   font-weight: 300;
   line-height: 20px;
 
- }
+}
+
+.conatiner .heading9 {
+  margin-bottom: 54px;
+}
 
 
 
 
-
-
-
- .heading9 p {
+.heading9 p {
 
   color: #000;
   text-align: left;
@@ -147,26 +163,34 @@ line-height: 20px; /* 166.667% */
   font-style: normal;
   font-weight: 400;
   line-height: 44px;
-  /* 122.222% */
   text-transform: uppercase;
   margin-top: 56px;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 }
 
-
+.heading9 .customersay {
+  color: #000;
+  font-family: Lato;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  /* 128.571% */
+  text-transform: uppercase;
+}
 
 /* product page  */
 .flex-box {
   display: flex;
-  gap: 20px; /* Space between small images, big image, and vertical line */
+  gap: 20px;
   align-items: flex-start;
   position: relative;
 }
 
 .left {
   display: flex;
-  flex-direction: column; /* Small images stack vertically */
-  gap: 10px; /* Space between small images */
+  flex-direction: column;
+  gap: 10px;
   margin-top: 40px;
 }
 
@@ -174,6 +198,8 @@ line-height: 20px; /* 166.667% */
   display: flex;
   flex-direction: column;
   width: auto;
+  margin-top: 41px;
+
 }
 
 .small-img img {
@@ -198,17 +224,21 @@ line-height: 20px; /* 166.667% */
 
 .vertical-line {
   width: 2px;
-  height: 741px; /* Matches the height of the big image */
-  margin: 0 20px; /* Space between big image and line */
+  height: 741px;
+  /* Matches the height of the big image */
+  margin: 0 20px;
+  /* Space between big image and line */
   position: relative;
-  background: linear-gradient(to bottom, black 50%, transparent 50%), 
-              linear-gradient(to bottom, transparent 50%, black 50%);
-  background-size: 100% 200%; /* Makes one half solid and one half dashed */
+  background: linear-gradient(to bottom, black 50%, transparent 50%),
+    linear-gradient(to bottom, transparent 50%, black 50%);
+  background-size: 100% 200%;
+  /* Makes one half solid and one half dashed */
   background-repeat: no-repeat;
 }
 
 .right {
-  margin-left: 20px; /* Proper alignment of the right column */
+  margin-left: 20px;
+  /* Proper alignment of the right column */
 }
 
 .url {
@@ -307,6 +337,19 @@ line-height: 20px; /* 166.667% */
   background-color: #0066ff;
 }
 
+.text-white {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 150% */
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
 
 
 
@@ -347,17 +390,19 @@ line-height: 20px; /* 166.667% */
 
   flex-shrink: 0;
 }
-.togglemenu{
+
+.togglemenu {
   color: #000;
-font-family: Lato;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 166.667% */
-margin-top:30px ;
-margin-bottom:30px ;
-float: left;
-margin-left: -30px;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  /* 166.667% */
+  margin-top: 100px;
+  margin-bottom: 75px;
+  float: left;
+  margin-left: -30px;
 }
 
 
@@ -773,17 +818,24 @@ p.line4 {
   flex-shrink: 0;
   margin-top: 16px;
   border-radius: 4px;
-  border: 0.5px solid #000;
 }
 
 .input-container {
   width: 411px;
   height: 36px;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-input-wrapper p {
-  font-family: 'Alike';
+  color: #000;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 166.667% */
+text-transform: capitalize;
 }
 
 input[type="email"] {
@@ -791,8 +843,18 @@ input[type="email"] {
   width: 411px;
   height: 36px;
   flex-shrink: 0;
-  border: 0.5px solid #000;
 
+}
+
+input[type="email"]::placeholder{
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 166.667% */
+  text-transform: capitalize;
+  
 }
 
 @media (max-width: 768px) {
@@ -825,10 +887,9 @@ input[type="email"] {
   background: url("./assets/images/collection1.jfif") no-repeat center center;
   background-size: cover;
   background-position: center center;
-  width: 100%;
-  /* Full width of the column */
-  height: 848px;
-  /* Maintain the specified height */
+  width: 720px;
+  height: 670px;
+  flex-shrink: 0;
   flex-shrink: 0;
 }
 
@@ -836,10 +897,9 @@ input[type="email"] {
   background: url("./assets/images/topview.png") no-repeat center center;
   background-size: cover;
   background-position: center center;
-  width: 100%;
-  /* Full width of the column */
-  height: 848px;
-  /* Maintain the specified height */
+  width: 720px;
+  height: 670px;
+  flex-shrink: 0;
   flex-shrink: 0;
 }
 
@@ -959,16 +1019,26 @@ input[type="email"] {
 }
 
 .description {
+
   color: #000;
   text-align: center;
-  font-family: "Lato", ;
-  font-size: 10px;
+  font-family: Lato;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+  text-transform: uppercase;
+  margin-left: -10px;
+  gap: 16px;
+
 
 }
 
+.like {
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
 
 .strike-through {
   text-decoration: line-through;
@@ -997,6 +1067,11 @@ input[type="email"] {
 .sliderimage {
   height: 792px;
   width: 589.09px;
+}
+
+.fourimages .section4 .card1 .img {
+max-width: 100%;
+max-height: 100%;
 }
 
 .section5 {
@@ -1036,7 +1111,6 @@ input[type="email"] {
 .fourimages {
   display: inline-flex;
   height: 493px;
-  margin-top: 58.5px;
   margin-left: 80px;
   margin-right: 80px;
   justify-content: center;
@@ -1276,22 +1350,17 @@ input[type="email"] {
 
 
 
-.description {
-  color: #000;
-  font-family: 'Lato';
-  font-size: 10px;
-  font-weight: 300;
-  line-height: 18px;
-  display: flex;
-  align-items: left;
-  gap: 8px;
-  align-self: stretch;
-  margin-left: -10px;
-
-}
-
 .description .price {
-  color: #888;
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+  text-transform: uppercase;
+
 }
 
 .description .strike-through {
@@ -1497,7 +1566,9 @@ svg {
 .faq {
   background-color: #000;
   padding: 25px 0;
+  margin-top: -40px;
 }
+
 
 .faq img {
   max-width: 80px;
@@ -1698,15 +1769,6 @@ img.img-fluid.model2 {
 
 
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
   .faq ul {
     flex-direction: column;
@@ -1743,7 +1805,6 @@ img.img-fluid.model2 {
   border: none;
   outline: none;
   margin: 0;
-  /* Removes any default margins */
   padding: 0;
 }
 
