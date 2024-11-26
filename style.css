@@ -199,9 +199,12 @@ line-height: 20px; /* 166.667% */
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 1.5px solid black;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+p.undelinesize {
+  margin-left: 40px;
 }
 
 .small-img:hover img {
@@ -243,13 +246,15 @@ line-height: 20px; /* 166.667% */
   line-height: 28px; /* 140% */
   text-transform: uppercase;
   width: 410.21px;
+  margin-bottom: 24px;
 }
 
 .pname {
   font-size: 22px;
   font-weight: 600;
-  margin-top: 50px;
   display: flex;
+  justify-items: flex-start;
+  gap: 8px;
 }
 
 
@@ -307,6 +312,15 @@ line-height: 20px;
 text-decoration: underline;
 text-decoration:solid
 
+}
+
+p.offwhite {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .featuring{
@@ -375,18 +389,20 @@ line-height: 20px; /* 166.667% */
   border: 1px dashed #9D9D9D; 
    margin-top: 32px;
 }
+
+
 p.offerline {
   color: #000;
   font-family: Lato;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: left;
-  margin-left: -22px;
-  margin-bottom: 24px;
-
+  /* margin-left: -22px; */
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 p.extraoff{
@@ -409,6 +425,29 @@ text-transform: uppercase;
 }
 
 
+.review {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border: 0.5px solid #9D9D9D;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+p.gapreview {
+  margin-top: 16px;
+  margin-left: 16px;
+  color: #000;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+text-transform: uppercase;
+}
+
 .reviews{
   display: flex;
 padding: 16px;
@@ -418,7 +457,14 @@ gap: 16px;
 align-self: stretch;
 border: 0.5px solid #9D9D9D;
 margin-bottom: 56px;
+width: 100%;
 
+}
+
+input[type="text"] {
+  border: none;
+  width: 100%;
+  margin-bottom: 16px;
 }
 .reviews span{
   color: #000;
@@ -430,20 +476,15 @@ margin-bottom: 56px;
   text-transform: uppercase;
 }
 
-input[type="text"] {
-  border: none;
-  width: 100%;
-}
 
 .rating1 {
   display: inline-flex;
   align-items: center;
   background-color: black;  
   color: white;
-  padding: 5px 8px;
+  padding: 0px 8px;
   border-radius: 5px;
   font-size: 14px;
-  justify-content: center;
 }
 
 
@@ -469,7 +510,6 @@ margin-left: -33px;
 
 .size {
   display: flex;
-  margin: 20px 0;
   margin-top:8px ;
   margin-bottom: 16px;
  
@@ -486,7 +526,7 @@ margin-left: -33px;
   border: 1px solid black;
   color: #000;
   text-align: center;
-  margin: 0 10px;
+  margin: 1px 5px;
   cursor: pointer;
 }
 
@@ -520,7 +560,22 @@ margin-left: -33px;
 .btn-box {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 32px;
+
+
 }
+
+p.cartbutton {
+  color: white;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+
 
 .btn-box button {
   font-size: 18px;
@@ -1064,8 +1119,15 @@ p.line4 {
   border-radius: 4px;
 }
 
+.container.offers {
+  margin-left: 0px;
+  justify-items: self-start;
+  margin-bottom: 24px;
+
+}
+
 .input-container {
-  width: 268px;
+  width: 300px;
   height: 36px;
   flex-shrink: 0;
   justify-content: center;
@@ -1089,6 +1151,9 @@ input[type="email"] {
   flex-shrink: 0;
   padding-right: 20px;
 
+}
+svg.bi.bi-geo {
+  margin-left: -284px;
 }
 
 .input-addon {
