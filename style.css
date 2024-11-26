@@ -1034,6 +1034,25 @@ p.line4 {
   font-weight: 300;
   line-height: 20px;
   text-transform: capitalize;
+}.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc; /* Add border to mimic input */
+  border-radius: 4px; /* Match input border radius */
+  padding: 0; /* Remove padding */
+}
+
+.input-wrapper svg {
+  margin-left: 6px; /* Gap between input and SVG */
+  height: 100%; /* Match height of input */
+}
+.input-wrapper input[type="email"] {
+  border: none; /* Remove default input border */
+  outline: none; /* Remove outline on focus */
+  width: 100%; /* Full width */
+  height: 36px; /* Match height */
+  border-radius: 4px; /* Match border radius */
+  padding-right: 6px; /* Space for the SVG */
 }
 
 .input-container .input {
@@ -1068,7 +1087,13 @@ input[type="email"] {
   width: 411px;
   height: 36px;
   flex-shrink: 0;
+  padding-right: 20px;
 
+}
+
+.input-addon {
+  margin-top: -31px;
+  margin-left: 380px;
 }
 
 input[type="email"]::placeholder{
@@ -1604,9 +1629,7 @@ max-height: 100%;
   transform: scale(1.1);
 }
 
-svg {
-  margin-left: -24px;
-}
+
 
 
 
