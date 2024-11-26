@@ -5,6 +5,26 @@ function showImg(pic){
     bigImg.src = pic;
 }
 
+const decreaseButton = document.getElementById('decrease');
+const increaseButton = document.getElementById('increase');
+const numberDisplay = document.getElementById('number');
+
+let count = 0;
+
+decreaseButton.addEventListener('click', () => {
+    if (count > 0) {
+        count--;
+        numberDisplay.textContent = count;
+    }
+});
+
+increaseButton.addEventListener('click', () => {
+    if (count < 5) {
+        count++;
+        numberDisplay.textContent = count;
+    }
+});
+
 
 const videoContainers = document.querySelectorAll('.image-container');
 
@@ -46,6 +66,7 @@ document.getElementById('heart-container').addEventListener('click', function ()
     blackHeart.style.display = 'none'; // Hide black heart
   }
 });
+
 
 
 
