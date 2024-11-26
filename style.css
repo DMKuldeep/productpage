@@ -91,6 +91,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 166.667% */
 
+
 }
 
 .coupon .secondline {
@@ -125,10 +126,34 @@ line-height: 20px; /* 166.667% */
 
 }
 
-.conatiner .heading9 {
-  margin-bottom: 54px;
+.container.part2content {
+  margin-top: 16px;
 }
 
+.row.col-md-12.d-flex.w-100.descriptionplus {
+  border: 0.5px solid #9D9D9D;
+  display: flex;
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 0px;
+
+}
+span.sizeguide1 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+p.undelinesize1 {
+  margin-left: 565px;
+  margin-top: -39px;
+}
 
 
 
@@ -161,6 +186,8 @@ line-height: 20px; /* 166.667% */
   margin-bottom: 32px;
 }
 
+
+
 .heading9 .customersay {
   color: #000;
   font-family: Lato;
@@ -168,8 +195,9 @@ line-height: 20px; /* 166.667% */
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
-  /* 128.571% */
   text-transform: uppercase;
+  margin-top: 56px;
+  margin-bottom: 36px;
 }
 
 /* product page  */
