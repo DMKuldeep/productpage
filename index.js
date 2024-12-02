@@ -1,9 +1,24 @@
 
 
 let bigImg = document.querySelector('.big-img img');
-function showImg(pic){
-    bigImg.src = pic;
-    
+// function showImg(pic){
+//     bigImg.src = pic; 
+
+
+let selectedImgSrc = bigImg.src; // Keeps track of the selected image
+let thumbnails = document.querySelectorAll('.small-img img');
+
+
+function showImg(pic) {
+  // Update the selected image source
+  selectedImgSrc = pic;
+  bigImg.src = pic;
+
+  // Remove the 'selected' class from all thumbnails
+  thumbnails.forEach(img => img.classList.remove('selected'));
+
+  // Add the 'selected' class to the clicked thumbnail
+  event.target.classList.add('selected');
 }
 
 const decreaseButton = document.getElementById('decrease');

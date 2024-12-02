@@ -248,10 +248,11 @@ hr:not([size]) {
 p.undelinesize {
   margin-left: 40px;
 }
-
-.small-img:hover img {
+.selected {
   transform: scale(1.2);
 }
+
+
 
 .big-img img {
   width: 519px;
