@@ -17,6 +17,7 @@
     background-size: cover;
     /* background-position: center center; */
     width: 300px;
+    flex: 30;
     height: 670px;  }
   
   .customswiperright {
@@ -24,6 +25,8 @@
     background-size: cover;
     /* background-position: center center; */
     width: 720px;
+    flex: 70;
+
     height: 670px;  }
   
   .resizable-button {
