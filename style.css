@@ -245,6 +245,7 @@ hr:not([size]) {
   object-fit: contain;
 }
 
+
 p.undelinesize {
   margin-left: 40px;
 }
@@ -681,23 +682,6 @@ p.cartbutton {
   align-items: center;
   gap: 4px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .col-md-6.p-0.image5 {
