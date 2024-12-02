@@ -242,6 +242,7 @@ hr:not([size]) {
   object-fit: cover;
   cursor: pointer;
   transition: all 0.3s ease;
+  object-fit: contain;
 }
 
 p.undelinesize {
@@ -705,6 +706,8 @@ p.cartbutton {
 
   flex-shrink: 0;
 }
+
+
 
 .togglemenu {
   color: #000;
