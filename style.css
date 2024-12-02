@@ -364,7 +364,13 @@ p.offwhite {
   font-weight: 400;
   line-height: 18px;
 }
+a:link, a:visited {
 
+  text-decoration: none;
+
+  color: black; /* Set your desired default link color */
+
+}
 .featuring{
   margin-top:24px ;
   margin-bottom: 24px;
@@ -378,6 +384,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 20px; /* 166.667% */
 text-transform: uppercase;
+margin-top: 16px;
 }
 .quantity p {
 margin-bottom: 8px;
@@ -552,7 +559,6 @@ margin-left: -33px;
 
 .size {
   display: flex;
-  margin-top:8px ;
   margin-bottom: 16px;
   margin-left: -5px;
  
@@ -1273,7 +1279,7 @@ input[type="email"]::placeholder{
 }
 
 .d-flex.colorbar {
-  gap: 24px;
+  gap: 9px;
 }
 
 
