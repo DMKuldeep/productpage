@@ -25,6 +25,18 @@ increaseButton.addEventListener('click', () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const sizeElements = document.querySelectorAll(".psize");
+
+  sizeElements.forEach((element) => {
+    element.addEventListener("click", () => {
+      // Remove 'active' class from all elements
+      sizeElements.forEach((el) => el.classList.remove("active"));
+      // Add 'active' class to the clicked element
+      element.classList.add("active");
+    });
+  });
+});
 
 const videoContainers = document.querySelectorAll('.image-container');
 
@@ -66,6 +78,11 @@ document.getElementById('heart-container').addEventListener('click', function ()
     blackHeart.style.display = 'none'; // Hide black heart
   }
 });
+
+
+
+
+
 
 
 
