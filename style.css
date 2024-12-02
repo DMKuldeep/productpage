@@ -1265,6 +1265,16 @@ input[type="email"]::placeholder{
   flex-shrink: 0;
 }
 
+.color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
+
+.d-flex.colorbar {
+  gap: 24px;
+}
 
 
 
