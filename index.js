@@ -21,6 +21,9 @@ function showImg(pic) {
   event.target.classList.add('selected');
 }
 
+
+
+
 const decreaseButton = document.getElementById('decrease');
 const increaseButton = document.getElementById('increase');
 const numberDisplay = document.getElementById('number');
