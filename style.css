@@ -709,7 +709,9 @@ p.cartbutton {
 
   flex-shrink: 0;
 }
-
+img.toggle-icon {
+  margin-left: 10px;
+}
 
 
 .togglemenu {
