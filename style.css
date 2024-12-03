@@ -735,6 +735,19 @@ img.toggle-icon {
   margin-bottom: 40px;
 }
 
+.verticalline {
+  position: relative;
+  width: 2px; /* Adjust thickness of the line */
+  height: 100%; /* Full height of the parent container */
+  background: linear-gradient(to bottom, black 50%, gray 50%); /* Top solid, bottom transparent */
+  margin: 0 auto; /* Center the line horizontally */
+  height: 720px;
+}
+
+
+
+
+
 
 
 
